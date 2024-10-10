@@ -10,3 +10,4 @@ def dict_to_dict(d: dict) -> dict:
 
 if __name__ == "__main__":
     assert dict_to_dict({"Ivanov": 97832, "Petrov": 55521, "Kuznecov": 97832}) == {97832: ("Ivanov", "Kuznecov"), 55521: "Petrov"}
+    assert dict_to_dict({"Ivanov": 97832, "Petrov": 55521, "Kuznecov": [97832, 55521]})
